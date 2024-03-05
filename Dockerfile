@@ -7,12 +7,12 @@ FROM ubuntu:21.04
 
 
 RUN apt-get clean
-RUN mv /var/lib/apt/lists /tmp
-RUN mkdir -p /var/lib/apt/lists/partial
-RUN apt-get clean
 
-RUN apt-get -y update
-RUN apt-get -y upgrade
+
+RUN add-apt-repository --remove ppa:vikoadi/ppa
+RUN apt update
+
+
 RUN apt-get -y install apache2
 RUN apt-get install –y apache2-utils 
 
