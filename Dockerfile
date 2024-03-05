@@ -9,7 +9,7 @@ FROM ubuntu:21.04
 RUN apt-get clean
 
 
-RUN add-apt-repository --remove ppa:vikoadi/ppa
+
 RUN apt update
 
 
