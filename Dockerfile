@@ -3,7 +3,7 @@
 # Copyleft (c) by Bruks
 #---------------------------------------------------------------------------
 
-FROM ubuntu:21.04
+FROM ubuntu:22.04
 
 
 RUN apt-get clean
